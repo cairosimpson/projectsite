@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <title>Cairo Simpson</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
 
-  <body background="images/opaqueJamaica.jpg">
-    <h1 class = "animated fadeInDown slow">Welcome to my website</h1>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <a href="https://www.linkedin.com/in/cairo-simpson-165371160/">
-        <img src="images/linked in icon ready.png" alt="LinkedIn Link" style="width:42px;height:42px;border:0;">
-    </a>
-    <a href="https://www.github.com/cairosimpson">
-        <img src="images/github icon ready.png" alt="Github Link" style="width: 42px; height:42px; border:0;">
-    </a>
-    <script src = "index.js"> </script>
+/* Style tab links */
+.tablink {
+  background-color: LightGray;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 15px;
+  width: 25%;
+}
 
-    <svg id = "canvas" width = "1000" height = "500">
-        
-    </svg>
-  </body>
+.tablink:hover {
+  background-color: #777;
+}
 
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: Tomato;}
+#Projects {background-color: DeepSkyBlue;}
+#Resume {background-color: MediumSeaGreen;}
+#Contact {background-color: orange;}
+</style>
+</head>
+<body>
+  <button class="tablink" onclick="openPage('Home', this, 'Tomato')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('Projects', this, 'DeepSkyBlue')" >Projects</button>
+  <button class="tablink" onclick="openPage('Resume', this, 'MediumSeaGreen')">Resume</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Welcome to the site</p>
+  </div>
+
+  <div id="Projects" class="tabcontent">
+    <h3>Projects</h3>
+    <p>Projects</p>
+  </div>
+
+  <div id="Resume" class="tabcontent">
+    <h3>Resume</h3>
+    <p>Here's My resume</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Contact Info</p>
+  </div>
+<script>
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "black"
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = "white"
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-SEND MOM RESUME + STATEMENT
-
-WRITE PROBLEM JOURNAL
-
-working out
-back discoloration
-acne scars
-social anxiety
-coding interviews
-code
-clean room
-keep room organized
-dont smoke
-teeth
