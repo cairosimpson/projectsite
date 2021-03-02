@@ -4,7 +4,7 @@ body, html {
   font-family: Arial;
 }
 a:link {
-  color: green;
+  color: whi53;
   background-color: transparent;
   text-decoration: none;
 }
@@ -31,6 +31,14 @@ a:link {
   display: none;
   padding: 100px 20px;
   height: 100%;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #Home {background-color: red;}

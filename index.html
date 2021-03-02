@@ -14,6 +14,21 @@ body, html {
   font-family: Arial;
 }
 
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
 /* Style tab links */
 .tablink {
   background-color: LightGray;
@@ -50,18 +65,21 @@ body, html {
 
 #Home {background-color: Tomato;}
 #Projects {background-color: RoyalBlue;}
-#Resume {background-color: MediumSeaGreen;}
+#Resumé {background-color: MediumSeaGreen;}
 #Contact {background-color: orange;}
 </style>
 </head>
 <body>
   <button class="tablink" onclick="openPage('Home', this, 'Tomato')" id="defaultOpen">Home</button>
   <button class="tablink" onclick="openPage('Projects', this, 'RoyalBlue')" >Projects</button>
-  <button class="tablink" onclick="openPage('Resume', this, 'MediumSeaGreen')">Resume</button>
+  <button class="tablink" onclick="openPage('Resumé', this, 'MediumSeaGreen')">Resumé</button>
   <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
 
   <div id="Home" class="tabcontent">
     <div class="flex-container-Home">
+      <div id = picME>
+          <img src="images/IMG_6626.jpeg" alt="Girl in a jacket" >
+      </div>
   <div id = About Me>
     <p> I have worked in analytics for Higher Ed (UC Berkeley) and in BioSciences (Personalis - DNA sequencing).  I am currently a junior at UC San Diego majoring in Mathematics/Computer Science -- I started at Rice in engineering, and ended up transferring to UCSD for their top tier computer science program.
 
@@ -72,8 +90,6 @@ I would welcome a conversation to discuss this position. </p>
   <div>2</div>
   <div>3</div>
 </div>
-    <h3>Home</h3>
-    <p>Welcome to the site broski</p>
   </div>
 
   <div id="Projects" class="tabcontent">
@@ -81,8 +97,8 @@ I would welcome a conversation to discuss this position. </p>
     <p>Projects</p>
   </div>
 
-  <div id="Resume" class="tabcontent">
-    <h3>Resume</h3>
+  <div id="Resumé" class="tabcontent">
+    <h3>Resumé</h3>
     <p>Here's My resume</p>
   </div>
 
@@ -93,7 +109,9 @@ I would welcome a conversation to discuss this position. </p>
     <p><a href = "mailto: ccsimpso@ucsd.edu">ccsimpso@ucsd.edu</a></p>
     <p>*Business Inquiries Only*
   </div>
+
 <script>
+
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
