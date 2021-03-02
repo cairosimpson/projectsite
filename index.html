@@ -22,6 +22,14 @@ img {
     max-width: 100%;
 }
 
+#linkedin{
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 20%;
+  max-width: 20%;
+}
+
 a:link {
   color: white;
   background-color: transparent;
@@ -61,6 +69,14 @@ a:link {
   align-items: center;
   height: 80%
 
+}
+
+.flex-container-Contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%
 }
 
 #Home {background-color: Tomato;}
@@ -103,11 +119,16 @@ I would welcome a conversation to discuss this position. </p>
   </div>
 
   <div id="Contact" class="tabcontent">
-    <h3>Contact Me!</h3>
-    <p>Cairo Simpson</p>
-    <p>925-550-5223</p>
-    <p><a href = "mailto: ccsimpso@ucsd.edu">ccsimpso@ucsd.edu</a></p>
-    <p>*Business Inquiries Only*
+    <div class="flex-container-Contact">
+      <h3>Contact Me!</h3>
+      <p>Cairo Simpson</p>
+      <p>925-550-5223</p>
+      <p><a href = "mailto: ccsimpso@ucsd.edu">ccsimpso@ucsd.edu</a></p>
+      <a href="https://www.linkedin.com/in/cairo-simpson-165371160/">
+        <img src="images/linked in icon ready.png" id = "linkedin">
+      </a>
+      <p>*Business Inquiries Only*</p>
+    </div>
   </div>
 
 <script>
