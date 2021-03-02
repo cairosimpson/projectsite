@@ -3,7 +3,11 @@ body, html {
   margin: 0;
   font-family: Arial;
 }
-
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
 /* Style tab links */
 .tablink {
   background-color: #555;
