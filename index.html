@@ -79,6 +79,14 @@ a:link {
   height: 80%
 }
 
+.flex-container-Resumé{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%
+}
+
 #Home {background-color: Tomato;}
 #Projects {background-color: RoyalBlue;}
 #Resumé {background-color: MediumSeaGreen;}
@@ -114,8 +122,28 @@ I would welcome a conversation to discuss this position. </p>
   </div>
 
   <div id="Resumé" class="tabcontent">
-    <h3>Resumé</h3>
-    <p>Here's My resume</p>
+    <div class="flex-container-Home">
+      <div id="education">
+        <h2><u>Education</u></h2>
+        <p>UC San Diego: BS in Mathematics and Computer Science (Expected Graduation Date: June 2022)</p>
+        <p>GPA: 3.9</p>
+        <p>Self Taught Stanford online coursework on data structures and algorithms (C++) (2018)</p>
+        <p>
+      </div>
+      <div id="Experience">
+        <h2><u>Work Experience</u></h2>
+        <h3> Quality Assurance Intern, Personalis, Menlo Park, CA (June 2019-September 2019)</h3>
+          <p>Developed Approved Vendor List that fulfilled regulatory requirements</p>
+          <p>Project expected to take two months; completed in one month due to creative solution</p>
+          <p>Proactively developed and automated new internal helpdesk system using Javascript and Html</p>
+          <p>Automated recurring monthly data entry task</p>
+          <p>Received offer to extend internship</p>
+        <h3>Marketing Intern, UC Berkeley, Berkeley, CA (March 2019-May 2019)</h3>
+          <p>Helped review proposal for management and software services. Reviewed requirements, submitted proposals, and identified gaps</p>
+          <p>Audited data for fundraising letters. Data sets were complex with over 200 permutations. Ensured correct data selected so it would be leveraged correctly in letters.</p>
+          <p>Analyzed data to determine donor affinity to different areas of UC Berkeley.</p>
+      </div>
+    </div>
   </div>
 
   <div id="Contact" class="tabcontent">
