@@ -30,6 +30,22 @@ img {
   max-width: 20%;
 }
 
+#proto-image{
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#inkbird-image{
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 a:link {
   color: white;
   background-color: transparent;
@@ -82,10 +98,29 @@ a:link {
 .flex-container-Resumé{
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 80%
+
+}
+
+.flex-Container-Projects{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%
+  height: 90%;
 }
+
+.flex-container-Project-Images{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100%;
+  height: 100%
+}
+
+
 
 #Home {background-color: Tomato;}
 #Projects {background-color: RoyalBlue;}
@@ -100,15 +135,16 @@ a:link {
   <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
 
   <div id="Home" class="tabcontent">
+
     <div class="flex-container-Home">
-      <div id = picME>
+
+      <h1>Welcome!</h1>
+      <div id = "picME">
           <img src="images/IMG_6626.jpeg" alt="Girl in a jacket" >
       </div>
-  <div id = About Me>
+  <div id = "About Me">
     <p> I have worked in analytics for Higher Ed (UC Berkeley) and in BioSciences (Personalis - DNA sequencing).  I am currently a junior at UC San Diego majoring in Mathematics/Computer Science -- I started at Rice in engineering, and ended up transferring to UCSD for their top tier computer science program.
-
 I am looking for an opportunity to work with a team of high-performing Data Scientists or Data Analysts and would like to focus on building data-driven products or deriving insights from large datasets where I can apply my skill set. I would like the opportunity to help out and be an active participant in knowledge-sharing sessions, brainstorming, workshops as well as design sprints. I am very curious, humble, hard-working, and eager-to-learn.
-
 I would welcome a conversation to discuss this position. </p>
     </div>
   <div>2</div>
@@ -117,18 +153,34 @@ I would welcome a conversation to discuss this position. </p>
   </div>
 
   <div id="Projects" class="tabcontent">
-    <h3>Projects</h3>
-    <p>Projects</p>
+    <div class="flex-container-Projects">
+      <div class="Houston-Project">
+        <h2>Class Project: Houston Museum of Natural Sciences (2018)
+        </h2>
+        <p>At Rice I took an engineering design class to learn about the design process. I was placed in a group with three other students, and we were tasked to create a temperature and humidity regulator for their butterfly exhibit. Before, the museum would regulate humidity through wet towels and had no way to monitor the temperature. As a result, the butterflies had only a 70% emergence rate. Consequently, the goal of the project was to create an effective way of regulating humidity and temperature to increase the survival rate of the butterflies. We went through the iterative enginnering design process to create a final prototype.
+        </p>
+      </div>
+      <div class ="flex-container-Project-Images">
+        <div id="proto-image">
+          <img src="images/IMG_3673.JPG">
+        </div>
+        <div id="inkbird-image">
+          <img src="images/IMG_3685.JPG">
+        </div>
+
+      </div>
+        <p>As far as my role in the project, I played a key role in the desgin and implementation of the device. More importantly however, I faciliated group discussions and was deemed the leader in the post-project survey. We initially had accountability and cohesion issues, but I was able to ameliorate these problems quickly. To solve the accountability issue, I created a Google Doc where everyone would write exactly what they did so everyone could see if one member of the group was slacking. For the cohesion problem, one member of the group was rubbing the other members the wrong way due to his inflexibility. I talked to him one-on-one and kindly suggested that he should sometimes take a step back so everyone's input could be given proper consideration. My suggestion was well-received and consquently minimized conflict.
+        </p>
+  </div>
   </div>
 
   <div id="Resumé" class="tabcontent">
-    <div class="flex-container-Home">
+    <div class="flex-container-Resumé">
       <div id="education">
         <h2><u>Education</u></h2>
         <p>UC San Diego: BS in Mathematics and Computer Science (Expected Graduation Date: June 2022)</p>
         <p>GPA: 3.9</p>
         <p>Self Taught Stanford online coursework on data structures and algorithms (C++) (2018)</p>
-        <p>
       </div>
       <div id="Experience">
         <h2><u>Work Experience</u></h2>
