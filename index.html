@@ -117,7 +117,7 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 80%;
 }
 
 .flex-container-Project-Images{
@@ -126,6 +126,8 @@ a:link {
   justify-content:center;
   width: 100%;
   height: 100%
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .flex-container-Twitter-Project{
@@ -138,22 +140,21 @@ a:link {
 
 
 
-#Home {background-color: Tomato;}
-#Projects {background-color: RoyalBlue;}
-#Resumé {background-color: MediumSeaGreen;}
-#Contact {background-color: orange;}
+#Home {background-color: RoyalBlue;}
+#Projects {background-color: MediumSeaGreen;}
+#Resumé {background-color: RoyalBlue;}
+#Contact {background-color: MediumSeaGreen;}
 </style>
 </head>
 <body>
-  <button class="tablink" onclick="openPage('Home', this, 'Tomato')" id="defaultOpen">Home</button>
-  <button class="tablink" onclick="openPage('Projects', this, 'RoyalBlue')" >Projects</button>
-  <button class="tablink" onclick="openPage('Resumé', this, 'MediumSeaGreen')">Resumé</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+  <button class="tablink" onclick="openPage('Home', this, 'RoyalBlue')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('Projects', this, 'MediumSeaGreen')" >Projects</button>
+  <button class="tablink" onclick="openPage('Resumé', this, 'RoyalBlue')">Resumé</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'MediumSeaGreen')">Contact</button>
 
   <div id="Home" class="tabcontent">
 
     <div class="flex-container-Home">
-
       <h1>Welcome!</h1>
       <div id = "picME">
           <img src="images/IMG_6626.jpeg" alt="Girl in a jacket" >
